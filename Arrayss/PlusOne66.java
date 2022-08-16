@@ -1,4 +1,4 @@
-package Arrays;
+package Arrayss;
 
 //https://leetcode.com/problems/plus-one/
 
