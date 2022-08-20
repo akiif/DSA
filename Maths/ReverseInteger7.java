@@ -1,4 +1,4 @@
-package Math;
+package Maths;
 
 //https://leetcode.com/problems/reverse-integer/
 public class ReverseInteger7 {
