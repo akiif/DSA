@@ -4,7 +4,6 @@ package Strings;
 
 public class ImplementstrStr28 {
 
-
     public int strStr(String haystack, String needle) {
         int index = -1;
         int n =  haystack.length();
