@@ -35,14 +35,12 @@ public class BinarySearch {
 
             int mid = start + ( ( end - start ) / 2 );   //same as start + end / 2 but here int overflow might happen so this formula is used.
 
-            if (arr[mid] == target) {
-                return mid;
-            }
-
             if (target < arr[mid]) {
                 end = mid - 1;
-            } else {
+            } else if (target > arr[mid]){
                 start = mid + 1;
+            } else {
+                return mid;
             }
         }
         return -1;
