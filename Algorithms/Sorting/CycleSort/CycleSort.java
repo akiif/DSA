@@ -1,23 +1,26 @@
-package Algorithms.Sorting.SelectionSort;
+package Algorithms.Sorting.CycleSort;
 
 /*
-It performs well on small lists
-It is an unstable algorithm.
+
+* When given numbers from range 1, N -> Use Cycle sort
+
+It is a Stable algorithm.
 Space Complexity :- O(1)
 Time Complexity :-
-    Best Case O(N^2)
+    Best Case O(N)
     Worst Case O(N^2)
 */
 
 import java.util.Arrays;
 
-public class SelectionSort {
+public class CycleSort {
 
     public static void main(String[] args) {
-        int[] arr = {10, 3, 3, -30, 5, 2, 1, 4};
+        int[] arr = {3, 5, 2, 1, 4};
         System.out.println("Array before sorting: \n" + Arrays.toString(arr));
         System.out.println("-----------------------------------------------------");
-        selectionSort(arr);
+
+        cycleSort(arr);
 
         System.out.println("Array after sorting: \n" + Arrays.toString(arr));
         System.out.println("-----------------------------------------------------");
@@ -27,26 +30,17 @@ public class SelectionSort {
         System.out.println("-----------------------------------------------------");
     }
 
-    // In selection sort we first find the max/min element and then put it in the appropriate position
-    public static void selectionSort(int[] arr) {
-        int index = arr.length - 1;
-        for (int i = 0; i < arr.length; i++) {
-            int last = arr.length - 1 - i;
-            int maxIndex = getMaxIndex(arr, last);
-            swap(arr, maxIndex, last);
-        }
-    }
+    public static void cycleSort(int[] arr) {
 
-    public static int getMaxIndex(int[] arr, int end) {
-        int max = Integer.MIN_VALUE;
-        int index = 0;
-        for (int i = 0; i <= end; i++) {
-            if (arr[i] > max) {
-                max = arr[i];
-                index = i;
+        int i = 0;
+        while (i < arr.length) {
+            int correct = arr[i] - 1;
+            if ( arr[i] != arr[correct] ) {
+                swap(arr, i, correct );
+            } else {
+                i++;
             }
         }
-        return index;
     }
 
     public static void swap(int[] arr, int first, int second) {
