@@ -1,6 +1,6 @@
 package Arrayss;
 
-
+// Asked in Amazon
 //https://leetcode.com/problems/find-the-duplicate-number/
 
 public class FindtheDuplicateNumber287 {
