@@ -1,0 +1,43 @@
+
+Q: You are given two gallons, a and b of 3l and 5l resp. and you need to fill 4l in gallon c.
+
+
+    |       |       |       |       |       |
+    |   3   |       |   5   |   =>  |   4   |
+    |_______|       |_______|       |_______|
+        a               b
+
+      a  b
+1 -> (0, 0) -> (3, 0) -> (0, 3)     Fill 1st bucket and then transfer it to second one
+2 -> (0, 3) -> (3, 3) -> (1, 5)     Fill 1st bucket and then transfer it to second one, 1 will be remaining and in first one.
+3 -> (1, 5) -> (1, 0) -> (0, 1)     Empty the second bucket and transfer 1 from first bucket to the second one
+4 -> (0, 1) -> (3, 1) -> (0, 4)     Fill 1st bucket and then transfer it to second one with 1 and 4 will be there in the second bucket
+
+jug a -> s1 times
+jug b -> s2 times
+remaining => as1 - bs2
+r = as1 + (-bs2)
+L = s1a + t1b
+r = s1a + t1b - t1b - bs2
+r = L - (t1 + u)b
+
+r = s1a + t1b = L
+r = ax + by
+4 = 3x + 5y
+Put x and y as integers, what is the minimum positive value you can have for eqn.
+Put x = -3, y = 2
+then, 3x + 5y = 1
+
+* This is called hcf
+HCF of a & b = minimum positive value of eqn ax + by where x and y are integers.
+HCF (4, 18) => 2
+Factors of 4 :-  1, 2, 4
+Factors of 18 :- 1, 2, 3, 6, 9, 18
+Ans = 2
+
+Example: (1)
+2x + 4y = 5
+2 (x + 2y) = 5
+x + y = 2.5 - wrong ans, so you cannot form it
+(2)
+3x + 5y = 4
