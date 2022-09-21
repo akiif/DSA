@@ -26,7 +26,7 @@ TODO: Types of recurrence relation:
 
 public class RecursionIntroduction {
     public static void main(String[] args) {
-        // Write a function that prints hello world
+        // Write a function that prints from n to 5
         print(1);
     }
 
