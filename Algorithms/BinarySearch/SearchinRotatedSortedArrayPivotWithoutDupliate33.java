@@ -1,7 +1,11 @@
 package Algorithms.BinarySearch;
 
-//Asked in Amazon and Google
-//https://leetcode.com/problems/search-in-rotated-sorted-array/
+/**
+ * Asked in Amazon and Google
+ * https://leetcode.com/problems/search-in-rotated-sorted-array/
+ * @see Algorithms.BinarySearch.SearchinRotatedSortedArrayPivotWithDupliateValues
+ * @see Recursion.ArraysR.RotatedBinarySearch
+ */
 
 import java.util.Arrays;
 

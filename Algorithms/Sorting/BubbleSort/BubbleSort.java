@@ -1,6 +1,6 @@
 package Algorithms.Sorting.BubbleSort;
 
-/*
+/**
 Also known as Sinking Sort and Exchange Sort
 It is an in-place sorting array.
 It is a stable algorithm.
@@ -8,7 +8,7 @@ Space Complexity :- O(1)
 Time Complexity :-
     Best Case O(N)  -> Array is sorted
     Worst Case O(N^2) -> Array is sorted in opposite
-
+@see Recursion.PatternsR.BubbleSort
  */
 
 import java.util.Arrays;

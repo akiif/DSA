@@ -1,12 +1,14 @@
 package Algorithms.Sorting.SelectionSort;
 
-/*
+/**
 It performs well on small lists
 It is an unstable algorithm.
 Space Complexity :- O(1)
 Time Complexity :-
     Best Case O(N^2)
     Worst Case O(N^2)
+
+ @see Recursion.PatternsR.SelectionSort
 */
 
 import java.util.Arrays;

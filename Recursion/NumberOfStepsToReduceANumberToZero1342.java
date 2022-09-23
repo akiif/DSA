@@ -1,6 +1,9 @@
 package Recursion;
 
-//https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
+/**
+ * https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
+ * @see Recursion.Level1.NumberOfZero
+ */
 
 public class NumberOfStepsToReduceANumberToZero1342 {
 
@@ -11,7 +14,7 @@ public class NumberOfStepsToReduceANumberToZero1342 {
     }
 
 
-    // Iterative Approach 
+    // Iterative Approach
     public static int numberOfSteps2 (int num) {
         int steps = 0;
 
