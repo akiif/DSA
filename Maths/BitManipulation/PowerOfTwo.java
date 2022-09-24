@@ -1,6 +1,7 @@
 package Maths.BitManipulation;
 
-/*
+/** https://leetcode.com/problems/power-of-two/
+* @see Recursion.PowerOfTwo231
 Q: Find out whether the given number is a power of 2 or not.
 1 0 0 0 0 0 0 => Yes
 1 0 0 0 0 1 0 => No
